@@ -12,14 +12,14 @@ namespace BagOLoot.Tests
         {
             _register = new ChildRegister();
         }
-
-        [Theory]
-        [InlineData("Sarah")]
+        // Should in thoery add children
+        [Theory] // A fact with multiple inputs
+        [InlineData("Sarah")] // runs unit test 3 times
         [InlineData("Jamal")]
         [InlineData("Kelly")]
         public void AddChildren(string child)
         {
-            var result = _register.AddChild(child);
+            var result = _register.AddChild(child); 
             Assert.True(result);
         }
 

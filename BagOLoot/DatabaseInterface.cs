@@ -15,6 +15,7 @@ namespace BagOLoot
         public DatabaseInterface()
         {
             _connection = new SqliteConnection(_connectionString);
+            
         }
 
         public void Check ()
